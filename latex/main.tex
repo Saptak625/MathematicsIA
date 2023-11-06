@@ -1,0 +1,82 @@
+\documentclass[11pt]{article}
+\usepackage{paper_style}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{indentfirst}
+\usepackage{lipsum}
+\usepackage{array}
+\usepackage{float}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{censor}
+\usepackage{cleveref}
+\usepackage{amsmath}
+\usepackage[section]{minted}
+
+%% ===============================================
+%% Setting the line spacing (3 options: only pick one)
+% \doublespacing
+% \singlespacing
+\onehalfspacing
+%% ===============================================
+
+\setlength{\droptitle}{-5em} %% Don't touch
+
+\crefname{section}{Section}{Sections}
+\crefname{figure}{Figure}{Figures}
+
+\newmintedfile[pythoncode]{python}{%
+    fontfamily=tt,
+    linenos=true,
+    breaklines=true,
+    numberblanklines=true,
+    numbersep=5pt,
+    gobble=0,
+    frame=leftline,
+    framerule=0.4pt,
+    framesep=2mm,
+    funcnamehighlighting=true,
+    tabsize=2,
+    obeytabs=false,
+    mathescape=false
+    samepage=false, %with this setting you can force the list to appear on the same page
+    showspaces=false,
+    showtabs=false,
+    texcl=false,
+}
+
+\begin{document}
+
+\include{title}
+
+\section{Introduction}
+\label{section:introduction}
+As a student, who got their driver's license only a few months ago, I am eager, yet cautious to drive. Since I learned that teen drivers have a fatal crash rate almost three times as high as drivers ages 20 and older per mile driven (CDC), I try to keep my driving to a minimum. However, avoiding driving completely is not a practical solution. Being able to drive is an integral skill of our society. Moreover, to drive safely, experience is necessary, experience that I would lack by avoiding driving entirely.
+
+Thus, to limit my driving risk, I have decided to derive a mathematical model to evaluate and advise me on the risk of driving in various driving scenarios. Through this mathematical model, I hope to understand the risks of driving more thoroughly in order to be safer and have more peace of mind when I am on the road. 
+
+This IA will also significantly extend my mathematical understanding of how advanced statistics, linear algebra, and multivariable calculus can be used to understand and visualize trends in data, determine the most important features through dimensionality reduction, and create an accurate and applicable Machine Learning model to evaluate the driving risk of a particular situation.
+
+
+\subsection{Research Question}
+What conditions result in the most dangerous driving accidents?
+
+\input{overview}
+
+\input{preprocessing}
+
+\input{exploratory_analysis}
+
+\input{modeling}
+
+\input{conclusion}
+
+\newpage
+\bibliography{ref}
+\bibliographystyle{apalike}
+
+\newpage
+\input{appendix}
+
+\end{document}

@@ -1,0 +1,94 @@
+\appendix
+\section{Appendix}
+\label{section:appendix}
+
+\subsection{Traffic Attributes}
+\label{section:traffic_attrs}
+
+\begin{longtable}[c]{l | l}
+    Column & Description \\
+    \hline
+    ID & This is a unique identifier of the accident record. \\
+    Source & Indicates source of the accident report. \\
+    Severity & Shows the severity of the accident, a number between 1 and 4. \\
+    Start Time & Shows start time of the accident in local time zone. \\
+    End Time & Shows end time of the accident in local time zone. \\
+    Start Latitude & Shows latitude in GPS coordinates of the start point. \\
+    Start Longitude: & Shows longitude in GPS coordinate of the start point. \\
+    End Latitude & Shows latitude in GPS coordinate of the end point. \\
+    End Longitude & Shows longitude in GPS coordinate of the end point. \\
+    Distance(mi) & The length of the road extent affected by the accident. \\
+    Description & Shows natural language description of the accident. \\
+\end{longtable}
+
+\subsection{Address Attributes}
+\label{section:address_attrs}
+
+\begin{longtable}[c]{l | l}
+    Column & Description \\
+    \hline
+    Number & Shows the street number in address field. \\
+    Street & Shows the street name in address field. \\
+    City & Shows the city in address field. \\
+    County & Shows the county in address field. \\
+    State & Shows the state in address field. \\
+    Zip Code & Shows the zipcode in address field. \\
+    Country & Shows the country in address field. \\
+    Timezone & Shows timezone based on the location of the accident. \\
+\end{longtable}
+
+\subsection{Weather Attributes}
+\label{section:weather_attrs}
+
+\begin{longtable}[c]{l | l}
+    Column & Description \\
+    \hline
+    Airport Code & Denotes the closest airport-based weather station. \\
+    Weather Timestamp & Shows the time-stamp of weather observation. \\
+    Temperature & Shows the temperature (in Fahrenheit). \\
+    Wind Chill & Shows the wind chill (in Fahrenheit). \\
+    Humidity & Shows the humidity (in percentage). \\
+    Pressure & Shows the air pressure (in inches). \\
+    Visibility & Shows visibility (in miles). \\
+    Wind Direction & Shows wind direction. \\
+    Wind Speed & Shows wind speed (in miles per hour). \\
+    Precipitation & Shows precipitation amount in inches, if there is any. \\
+    Weather Condition & Shows the weather condition. \\
+\end{longtable}
+
+\subsection{Point-Of-Interest Attributes}
+\label{section:poi_attrs}
+
+\begin{longtable}[c]{l | l}
+    Column & Description \\
+    \hline
+    Amenity & Indicates presence of amenity in a nearby location. \\
+    Bump & Indicates presence of speed bump or hump in a nearby location. \\
+    Crossing & Indicates presence of crossing in a nearby location. \\
+    Give Way & Indicates presence of give way sign in a nearby location. \\
+    Junction & Indicates presence of junction in a nearby location. \\
+    No Exit & Indicates presence of no exit sign in a nearby location. \\
+    Railway & Indicates presence of railway in a nearby location. \\
+    Roundabout & Indicates presence of roundabout in a nearby location. \\
+    Station & Indicates presence of station (bus, train, etc.) in a nearby location. \\
+    Stop & Indicates presence of stop sign in a nearby location. \\
+    Traffic Calming & Indicates presence of traffic calming means in a nearby location. \\
+    Traffic Signal & Indicates presence of traffic signal in a nearby location. \\
+    Turning Loop & Indicates presence of turning loop in a nearby location. \\
+\end{longtable}
+
+\subsection{Period-of-Day Attributes}
+\label{section:pod_attrs}
+
+\begin{longtable}[c]{l | l}
+    Column & Description \\
+    \hline
+    Sunrise Sunset & Shows the period of day based on sunrise/sunset. \\
+    Civil Twilight & Shows the period of day based on civil twilight. \\
+    Nautical Twilight & Shows the period of day based on nautical twilight. \\
+    Astronomical Twilight & Shows the period of day based on astronomical twilight. \\
+\end{longtable}
+
+\subsection{Python Code for Data Processing, Analysis, and Visualization}
+\label{code:python}
+\pythoncode{main.py}
